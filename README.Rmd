@@ -1,67 +1,49 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
 ## Trends and Patterns in Childlessness by Age, Race, Ethnicity, and Education in the United States: A Research Note
+
 
 <img src="./outputs/figures/fig2.jpg" width="750px" style="display: block; margin: auto;" />
 
-This repository,
-[`childless_us`](https://github.com/benjisamschlu/childless_us),
-contains reproducible code for manuscript, “Trends and Patterns in
-Childlessness by Age, Race, Ethnicity, and Education in the United
-States: A Research Note”, which uses publicly-available data from the
-[Current Population Survey](https://cps.ipums.org/cps/) and the
-[National Survey of Family
-Growth](https://www.cdc.gov/nchs/nsfg/index.htm).
+This repository, [`childless_us`](https://github.com/benjisamschlu/childless_us), contains reproducible code for manuscript, "Trends and Patterns in Childlessness by Age, Race, Ethnicity, and Education in the United States: A Research Note", which uses publicly-available data from the [Current Population Survey](https://cps.ipums.org/cps/) and the [National Survey of Family Growth](https://www.cdc.gov/nchs/nsfg/index.htm). 
+
 
 ## Keypoints
 
-**Aim.** We develop a Bayesian parametric model to estimate the
-proportion of women who are childless by age, race and ethnicity, and
-education for birth cohorts 1950-1999 using data from the Current
-Population Survey and the National Survey of Family Growth.
+**Aim.** We develop a Bayesian parametric model to estimate the proportion of women who are childless by age, race and ethnicity, and education for birth cohorts 1950-1999 using data from the Current Population Survey and the National Survey of Family Growth.
 
-**Findings.** We show that there have been substantial changes to
-childbearing trajectories in the United States, with an increase in the
-share of women who are childless at most ages. For the 1950-1954 birth
-cohort, the age by which 50% of women had a child was 24 years, while
-for the 1990-1994 cohort it had risen to 29 years. Childlessness
-declines rapidly at early ages for those with a high school degree only,
-while those with a college degree enter parenthood later. Increases in
-childlessness at younger ages have not yet had substantial effects on
-the share of women without children at age 45, which has risen for some
-groups but fallen for others, particularly the most-educated mothers.
+**Findings.** We show that there have been substantial changes to childbearing trajectories in the United States, with an increase in the share of women who are childless at most ages. For the 1950-1954 birth cohort, the age by which 50% of women had a child was 24 years, while for the 1990-1994 cohort it had risen to 29 years. Childlessness declines rapidly at early ages for those with a high school degree only, while those with a college degree enter parenthood later. Increases in childlessness at younger ages have not yet had substantial effects on the share of women without children at age 45, which has risen for some groups but fallen for others, particularly the most-educated mothers. 
+
 
 ## About this repository
 
-All code can be found in the `./codes` folder and must be run in order.
-The first few lines of each code file contains a brief description of
-the tasks related to that file. Figures are in the `./outputs/figures`
-folder.
+All code can be found in the `./codes` folder and must be run in order. The first few lines of each code file contains a brief description of the tasks related to that file. Figures are in the `./outputs/figures` folder. 
+
 
 ## Authors
+-   [Benjamin-Samuel Schlüter](https://www.benjaminschluter.com/)
+-   [Leslie Root](https://leslieroot.net/about/)
+-   [Monica Alexander](https://www.monicaalexander.com/)   
 
-- [Benjamin-Samuel Schlüter](https://www.benjaminschluter.com/)
-- [Leslie Root](https://leslieroot.net/about/)
-- [Monica Alexander](https://www.monicaalexander.com/)
 
 ## Notes on Reproducibility
 
-We use publicly available data and provide code that will download NSFG
-data. Regarding CPS data, you need to extract the data from
-[IPUMS](https://cps.ipums.org/cps/). Your extract (in .csv format) needs
-to include the variables: *year, month, serial, pernum, momloc, momloc2,
-poploc, poploc2, frever, wtfinl, educ, age, sex, race, hispan,
-nativity*. Then place the extract in `./inputs/data`. For the validation
-with the [Human Fertility
-Database](https://www.humanfertility.org/Home/Index), you will need to
-create an account if you don’t have one yet.
+We use publicly available data and provide code that will download NSFG data. Regarding CPS data, you need to extract the data from [IPUMS](https://cps.ipums.org/cps/). Your extract (in .csv format) needs to include the variables: *year, month, serial, pernum, momloc, momloc2, poploc, poploc2, frever, wtfinl, educ, age, sex, race, hispan, nativity*. Then place the extract in `./inputs/data`. For the validation with the [Human Fertility Database](https://www.humanfertility.org/Home/Index), you will need to create an account if you don't have one yet.
 
-We use [`renv`](https://rstudio.github.io/renv/index.html) for package
-management but below we also post the relevant session information to
-ensure full reproducibility.
+We use [`renv`](https://rstudio.github.io/renv/index.html) for package management but below we also post the relevant session information to ensure full reproducibility. 
 
-``` r
+```{r, eval=FALSE}
 > sessioninfo::session_info()
 ─ Session info ─────────────────────────────────────────────────────────────────────
  setting  value
@@ -174,7 +156,7 @@ ensure full reproducibility.
 ────────────────────────────────────────────────────────────────────────────────────
 ```
 
-``` r
+```{r, eval=FALSE}
 > sessionInfo()
 R version 4.4.0 (2024-04-24 ucrt)
 Platform: x86_64-w64-mingw32/x64

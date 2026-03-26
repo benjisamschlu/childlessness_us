@@ -1,10 +1,9 @@
 ## Project specific ignores
 **README.html
 codes/secrets.R
-inputs/data/**
-!inputs/data/README.md
-outputs/data/**
-!outputs/data/README.md
+inputs/data/cps_00013.csv.gz
+inputs/data/us_ex_parity.txt
+
 
 # General OS
 .DS_Store
