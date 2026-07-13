@@ -1,0 +1,29 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA femresp
+
+NOTE: Processing inline DATALINES (25 lines)
+
+NOTE: Read 25 rows from DATALINES.
+NOTE: Wrote femresp (25 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA femresp
+
+
+NOTE: Read 25 rows from femresp.
+NOTE: Wrote femresp (25 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=femresp
+
+NOTE: PROC PRINT completed: 8 observations printed, 8 variables
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_hieduc_childless.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_race_childless.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.

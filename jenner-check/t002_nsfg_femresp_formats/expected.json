@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-13T07:31:27Z",
+  "_captured_run_id": "r_4fe5e8d49f5e460fb75470026e7c1481",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: FORMAT PARITY defined (6 ranges).",
+    "NOTE: FORMAT HIEDUC1F defined (11 ranges).",
+    "NOTE: Read 25 rows from DATALINES.",
+    "NOTE: PROC FREQ statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

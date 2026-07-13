@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_nsfg_femresp_setup",
+  "source_file": "inputs/data/2006_2010_FemRespSetup.sas",
+  "source_blob_sha": "8367e91096af9378da759be5d40c701b0202638b",
+  "source_commit": "e60bd550cb86cb007f56c64a7066c91dc0f446fe",
+  "notes": "NSFG 2006-2010 Female Respondent public-use setup file. Original is a single 10,696-line DATA step reading a 6251-byte fixed-record IPUMS/NSFG extract (not distributed with repo). Bundle keeps the exact variable names and verbatim LABEL text for the manuscript-relevant subset (AGE_R, EDUCAT, HIEDUC, HISPANIC, RACE, PARITY, BIRTHS5, FINALWGT30, WGTQ5Q16) and reads 25 synthetic records from inline DATALINES so the step runs standalone. Adds a childlessness tabulation (PARITY=0 by education and race) plus a PROC MEANS of age by childless status, mirroring the manuscript's estimands. Runs status=ok, exit=0, no warnings."
+}
