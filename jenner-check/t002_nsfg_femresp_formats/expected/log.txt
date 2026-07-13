@@ -1,0 +1,25 @@
+NOTE: Option OBS changed to 100.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT PARITY defined (6 ranges).
+NOTE: FORMAT HIEDUC1F defined (11 ranges).
+NOTE: FORMAT HISPANIC defined (2 ranges).
+NOTE: FORMAT RACE defined (3 ranges).
+NOTE: DATA femresp
+
+NOTE: Processing inline DATALINES (25 lines)
+
+NOTE: Read 25 rows from DATALINES.
+NOTE: Wrote femresp (25 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_parity.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_hieduc_parity.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_race_hispanic.spec.json
+NOTE: PROC FREQ statement used.

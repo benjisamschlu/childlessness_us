@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_nsfg_femresp_formats",
+  "source_file": "inputs/data/2006_2010_FemRespSetup.sas",
+  "source_blob_sha": "8367e91096af9378da759be5d40c701b0202638b",
+  "source_commit": "e60bd550cb86cb007f56c64a7066c91dc0f446fe",
+  "notes": "Same NSFG setup file. This bundle un-comments and applies the file's own PROC FORMAT value definitions (PARITY, HIEDUC1F, HISPANIC, RACE -- copied verbatim) via a FORMAT statement, so the recode codes render as their descriptive categories ('0 BABIES', BACHELOR'S DEGREE, BLACK/WHITE/OTHER). Reads the same 25-record inline sample and tabulates formatted parity by education and race by Hispanic origin. Runs status=ok, exit=0, no warnings. Distinct technique from t001 (user-defined formats vs. raw codes)."
+}
